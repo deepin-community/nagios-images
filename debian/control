@@ -1,0 +1,29 @@
+Source: nagios-images
+Maintainer: Debian Nagios Maintainer Group <pkg-nagios-devel@lists.alioth.debian.org>
+Uploaders: Alexander Wirt <formorer@debian.org>,
+           Jan Wagner <waja@cyconet.org>
+Section: net
+Priority: optional
+Build-Depends: debhelper (>= 10~)
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/nagios-team/pkg-nagios-images
+Vcs-Git: https://salsa.debian.org/nagios-team/pkg-nagios-images.git
+
+Package: nagios-images
+Architecture: all
+Depends: ${misc:Depends}
+Description: Collection of images and icons for the nagios system
+ nagios-images contains an assortment of dfsg-free images and icons
+ for use in the web frontend of the nagios system.
+ .
+ Nagios is a host/service/network monitoring and management system. It has
+ the following features:
+   *  Monitoring of network services (via TCP port, SMTP, POP3, HTTP, NNTP,
+      PING, etc.)
+   *  Plugin interface to allow for user-developed service checks
+   *  Contact notifications when problems occur and get resolved (via email,
+      pager, or user-defined method)
+   *  Ability to define event handlers to be run during service or
+      host events (for proactive problem resolution)
+   *  Web output (current status, notifications, problem history, log
+      file, etc.)

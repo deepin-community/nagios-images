@@ -1,0 +1,3 @@
+# False positive, file is an image not a license file.
+nagios-images: extra-license-file usr/share/nagios/htdocs/images/logos/logos/bsd.gd2
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for i in $(find . -mindepth 1 -maxdepth 1 -type d -a -! -name debian)
+do
+    echo "Working on theme $i"
+    for f in $i/*.png
+    do
+        echo "$f -> $i/$(basename $f .png).gd2"
+        pngtogd2 $f "$i/$(basename $f .png).gd2" 0 1
+    done
+done
+
